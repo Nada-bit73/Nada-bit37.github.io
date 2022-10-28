@@ -1,4 +1,13 @@
+/**
+* Template Name: Gp - v4.9.1
+* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 body {
@@ -157,6 +166,15 @@ h6 {
 #header .logo img {
     max-height: 40px;
 }
+
+@media (max-width: 768px) {
+    .logo a {
+        font-size: 0px;
+        width:fit-content; 
+    }
+}
+
+
 
 /*--------------------------------------------------------------
 #  Get Startet Button
@@ -490,7 +508,8 @@ h6 {
 
 @media (min-width: 1024px) {
     #hero {
-        background-attachment: fixed;
+        background-size: cover;
+        position: relative;
     }
 }
 
@@ -504,9 +523,24 @@ h6 {
         line-height: 36px;
     }
 
-    #hero h2 {
-        font-size: 20px;
-        line-height: 24px;
+    #hero h3 {
+        font-size: 30px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h3 {
+        font-size: 50px;
+        padding-bottom: 87px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 575px) {
+    #hero h3 {
+        text-align: center;
+        padding-bottom: 156px;
     }
 }
 
@@ -1014,14 +1048,13 @@ section {
     min-height: 400px;
 }
 
-@media (max-width: 991px) {
-    .counts .image {
-        text-align: center;
+@media (max-width: 575px) {
+    .skills .row {
+       justify-content: center;
+       padding-left: 50%;
+
     }
 
-    .counts .image img {
-        max-width: 80%;
-    }
 }
 
 @media (max-width: 667px) {
